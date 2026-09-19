@@ -15,7 +15,7 @@ export default function CreateTripModal({
 
     try {
       await axios.post(
-        "http://localhost:5000/api/trips",
+        "https://splitwise-pro-v1.onrender.com/api/trips",
         {
           name: tripName,
           budget: Number(budget),

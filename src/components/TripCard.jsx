@@ -50,7 +50,7 @@ export default function TripCard({ trip }) {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/trips/${trip._id}`
+        `https://splitwise-pro-v1.onrender.com/api/trips/${trip._id}`
       );
 
       window.location.reload();

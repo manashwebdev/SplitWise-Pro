@@ -33,7 +33,7 @@ export default function TripDetails() {
     const fetchTrip = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/trips/${id}`
+          `https://splitwise-pro-v1.onrender.com/api/trips/${id}`
         );
 
         setTrip(response.data);
@@ -64,7 +64,7 @@ export default function TripDetails() {
 
       try {
         await axios.put(
-          `http://localhost:5000/api/trips/${trip._id}`,
+          `https://splitwise-pro-v1.onrender.com/api/trips/${trip._id}`,
           {
             ...trip,
             members,
